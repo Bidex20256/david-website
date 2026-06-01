@@ -1,0 +1,15 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+
+# Optional: keep access key local only (uncomment if you don't want key on GitHub)
+# assets/js/contact-config.js

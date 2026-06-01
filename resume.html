@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume / CV | DAVIDJAMES</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "DM Sans", sans-serif;
+      font-size: 11pt;
+      line-height: 1.5;
+      color: #1c1917;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    h1, h2, h3 { font-family: Outfit, sans-serif; }
+    h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+    h1 span { color: #16a34a; }
+    .subtitle { color: #57534e; margin-bottom: 1.5rem; }
+    .contact-line { font-size: 0.9rem; margin-bottom: 2rem; }
+    .contact-line a { color: #16a34a; text-decoration: none; }
+    h2 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #d4a017;
+      border-bottom: 2px solid #16a34a;
+      padding-bottom: 0.35rem;
+      margin: 1.5rem 0 0.75rem;
+    }
+    .job { margin-bottom: 1.25rem; }
+    .job h3 { font-size: 1.05rem; }
+    .job .meta { color: #78716c; font-size: 0.9rem; margin-bottom: 0.35rem; }
+    ul { margin-left: 1.25rem; margin-bottom: 0.5rem; }
+    .skills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .skills span {
+      background: #fde68a;
+      color: #1c1917;
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .print-btn {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.75rem 1.25rem;
+      background: linear-gradient(135deg, #f5c518, #16a34a);
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    @media print {
+      .print-btn { display: none; }
+      body { padding: 0; }
+    }
+  </style>
+</head>
+<body>
+  <button class="print-btn" type="button" onclick="window.print()">Print / Save as PDF</button>
+
+  <header>
+    <h1>DAVID<span>JAMES</span></h1>
+    <p class="subtitle">Full-Stack Developer</p>
+    <p class="contact-line">
+      <a href="mailto:davidjames@email.com">davidjames@email.com</a> ·
+      United States · Remote ·
+      <a href="https://github.com">github.com/davidjames</a> ·
+      <a href="https://linkedin.com">linkedin.com/in/davidjames</a>
+    </p>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p>Full-stack developer with 5+ years of experience building scalable web applications. Proficient in React, Node.js, TypeScript, and cloud deployment. Passionate about clean code, performance, and delivering exceptional user experiences.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>React</span><span>Next.js</span><span>TypeScript</span><span>Node.js</span>
+      <span>Python</span><span>PostgreSQL</span><span>MongoDB</span><span>AWS</span>
+      <span>Docker</span><span>Git</span><span>REST APIs</span><span>Tailwind CSS</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="job">
+      <h3>Senior Full-Stack Developer — TechVenture Inc.</h3>
+      <p class="meta">2022 — Present</p>
+      <ul>
+        <li>Lead development of SaaS products serving 10,000+ users</li>
+        <li>Architect microservices on AWS; reduced deployment time by 60%</li>
+        <li>Mentor junior developers and conduct code reviews</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Full-Stack Developer — DigitalCraft Agency</h3>
+      <p class="meta">2020 — 2022</p>
+      <ul>
+        <li>Built 15+ client websites and e-commerce platforms</li>
+        <li>Integrated Stripe, headless CMS, and third-party APIs</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Junior Web Developer — StartUp Labs</h3>
+      <p class="meta">2018 — 2020</p>
+      <ul>
+        <li>Developed REST APIs and responsive front-ends</li>
+        <li>Implemented CI/CD pipelines with GitHub Actions</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="job">
+      <h3>B.S. Computer Science — State University of Technology</h3>
+      <p class="meta">2014 — 2018</p>
+    </div>
+    <div class="job">
+      <h3>Certifications</h3>
+      <ul>
+        <li>AWS Certified Developer — Associate (2021)</li>
+        <li>Meta Front-End Professional Certificate (2020)</li>
+      </ul>
+    </div>
+  </section>
+</body>
+</html>

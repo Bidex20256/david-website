@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of DAVIDJAMES — Full-stack development projects with live demos and GitHub repositories.">
+  <title>Portfolio | DAVIDJAMES</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; } .reveal.visible { opacity: 1; transform: translateY(0); }</style>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="DAVIDJAMES Home">DAVID<span>JAMES</span></a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+        <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        </button>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container reveal">
+        <span class="section-label">Portfolio</span>
+        <h1>Projects & <span style="background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Work</span></h1>
+        <p>A curated collection of full-stack applications, from MVPs to production systems serving thousands of users.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-image-wrap">
+              <img src="assets/images/projects/shopflow.svg" alt="ShopFlow E-Commerce project thumbnail" class="project-thumb" width="640" height="400" loading="lazy" decoding="async">
+              <div class="project-overlay"><span class="project-overlay-text">View Project</span></div>
+            </div>
+            <div class="project-body">
+              <h3>ShopFlow E-Commerce</h3>
+              <p>Modern e-commerce platform with product catalog, Stripe checkout, inventory management, and seller analytics dashboard.</p>
+              <div class="project-tags">
+                <span>React</span><span>Node.js</span><span>PostgreSQL</span><span>Stripe</span>
+              </div>
+              <div class="project-links">
+                <a href="https://example.com" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="https://github.com" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image-wrap">
+              <img src="assets/images/projects/analytics.svg" alt="Insight Analytics Dashboard project thumbnail" class="project-thumb" width="640" height="400" loading="lazy" decoding="async">
+              <div class="project-overlay"><span class="project-overlay-text">View Project</span></div>
+            </div>
+            <div class="project-body">
+              <h3>Insight Analytics Dashboard</h3>
+              <p>Enterprise BI tool with real-time charts, custom report builder, role-based access, and CSV/PDF export.</p>
+              <div class="project-tags">
+                <span>Next.js</span><span>Python</span><span>Redis</span><span>D3.js</span>
+              </div>
+              <div class="project-links">
+                <a href="https://example.com" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="https://github.com" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image-wrap">
+              <img src="assets/images/projects/teamchat.svg" alt="TeamChat Pro project thumbnail" class="project-thumb" width="640" height="400" loading="lazy" decoding="async">
+              <div class="project-overlay"><span class="project-overlay-text">View Project</span></div>
+            </div>
+            <div class="project-body">
+              <h3>TeamChat Pro</h3>
+              <p>Slack-style team messaging with channels, direct messages, file uploads, emoji reactions, and push notifications.</p>
+              <div class="project-tags">
+                <span>React</span><span>Socket.io</span><span>MongoDB</span><span>AWS S3</span>
+              </div>
+              <div class="project-links">
+                <a href="https://example.com" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="https://github.com" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image-wrap">
+              <img src="assets/images/projects/healthtrack.svg" alt="HealthTrack Portal project thumbnail" class="project-thumb" width="640" height="400" loading="lazy" decoding="async">
+              <div class="project-overlay"><span class="project-overlay-text">View Project</span></div>
+            </div>
+            <div class="project-body">
+              <h3>HealthTrack Portal</h3>
+              <p>Patient appointment scheduling, medical records access, and telehealth video integration for healthcare providers.</p>
+              <div class="project-tags">
+                <span>Vue.js</span><span>Express</span><span>MySQL</span><span>WebRTC</span>
+              </div>
+              <div class="project-links">
+                <a href="https://example.com" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="https://github.com" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image-wrap">
+              <img src="assets/images/projects/learnhub.svg" alt="LearnHub LMS project thumbnail" class="project-thumb" width="640" height="400" loading="lazy" decoding="async">
+              <div class="project-overlay"><span class="project-overlay-text">View Project</span></div>
+            </div>
+            <div class="project-body">
+              <h3>LearnHub LMS</h3>
+              <p>Learning management system with course creation, quizzes, progress tracking, and certificate generation.</p>
+              <div class="project-tags">
+                <span>React</span><span>NestJS</span><span>PostgreSQL</span><span>JWT</span>
+              </div>
+              <div class="project-links">
+                <a href="https://example.com" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="https://github.com" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image-wrap">
+              <img src="assets/images/projects/weathernow.svg" alt="WeatherNow API App project thumbnail" class="project-thumb" width="640" height="400" loading="lazy" decoding="async">
+              <div class="project-overlay"><span class="project-overlay-text">View Project</span></div>
+            </div>
+            <div class="project-body">
+              <h3>WeatherNow API App</h3>
+              <p>Location-based weather forecasts with interactive maps, 7-day outlook, and favorites — consumes OpenWeather API.</p>
+              <div class="project-tags">
+                <span>JavaScript</span><span>REST API</span><span>Leaflet</span><span>PWA</span>
+              </div>
+              <div class="project-links">
+                <a href="https://example.com" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="https://github.com" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container reveal">
+        <div class="cta-banner">
+          <h2>Have a project in mind?</h2>
+          <p>I'd love to hear about your goals and how I can help bring them to life.</p>
+          <a href="contact.html" class="btn btn-outline">Start a Conversation</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">DAVID<span>JAMES</span></a>
+          <p>Full-stack developer building modern, responsive web applications for clients worldwide.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:davidjames@email.com">davidjames@email.com</a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 DAVIDJAMES. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="https://github.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+          <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Sarah Mitchell portrait">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#fde68a"/><stop offset="100%" stop-color="#bbf7d0"/></linearGradient></defs>
+  <rect width="200" height="200" fill="url(#bg)"/>
+  <ellipse cx="100" cy="210" rx="75" ry="55" fill="#1e3a5f"/>
+  <ellipse cx="100" cy="88" rx="52" ry="58" fill="#d4a574"/>
+  <ellipse cx="100" cy="95" rx="48" ry="50" fill="#c9956a"/>
+  <path d="M55 95 Q100 55 145 95" fill="#3d2314"/>
+  <ellipse cx="82" cy="92" rx="6" ry="7" fill="#1c1917"/><ellipse cx="118" cy="92" rx="6" ry="7" fill="#1c1917"/>
+  <path d="M88 108 Q100 118 112 108" stroke="#8b4513" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M70 75 Q100 68 130 75" stroke="#3d2314" stroke-width="8" fill="none" stroke-linecap="round"/>
+</svg>

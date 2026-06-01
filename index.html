@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DAVIDJAMES — Full-Stack Developer portfolio. Building scalable web applications with modern technologies.">
+  <meta name="keywords" content="full-stack developer, web developer, DAVIDJAMES, portfolio, JavaScript, React, Node.js">
+  <meta name="author" content="DAVIDJAMES">
+  <title>DAVIDJAMES | Full-Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .error-field { border-color: #ef4444 !important; }
+  </style>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="DAVIDJAMES Home">DAVID<span>JAMES</span></a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+        <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        </button>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="hero-badge">
+            <span class="dot" aria-hidden="true"></span>
+            Available for new projects
+          </div>
+          <h1 id="hero-heading" class="hero-title">
+            Hi, I'm <span class="highlight">DAVIDJAMES</span>
+          </h1>
+          <p class="hero-tagline">
+            Full-stack developer crafting elegant, performant web experiences from concept to deployment.
+          </p>
+          <div class="hero-cta">
+            <a href="portfolio.html" class="btn btn-primary">View Portfolio</a>
+            <a href="resume.html" class="btn btn-outline" target="_blank">Download Resume</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <strong>5+</strong>
+              <span>Years Experience</span>
+            </div>
+            <div class="hero-stat">
+              <strong>40+</strong>
+              <span>Projects Delivered</span>
+            </div>
+            <div class="hero-stat">
+              <strong>30+</strong>
+              <span>Happy Clients</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="hero-card">
+            <img
+              class="hero-avatar"
+              src="assets/images/profile.png"
+              alt="David James — Full-Stack Developer"
+              width="160"
+              height="160"
+            >
+            <h3>Full-Stack Developer</h3>
+            <p>React · Node.js · TypeScript · Cloud</p>
+            <div class="hero-tech">
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">Node</span>
+              <span class="tech-pill">AWS</span>
+              <span class="tech-pill">PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="preview-about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">About Me</span>
+          <h2 id="preview-about" class="section-title">Building digital <span>solutions</span> that matter</h2>
+          <p class="section-desc">I combine front-end polish with robust back-end architecture to deliver products users love and businesses rely on.</p>
+        </div>
+        <div class="about-grid reveal">
+          <img
+            class="about-photo"
+            src="assets/images/profile.png"
+            alt="David James — Full-Stack Developer professional portrait"
+            width="360"
+            height="450"
+            loading="lazy"
+          >
+          <div class="about-content">
+            <p>With over five years in software development, I specialize in end-to-end web applications — from responsive UIs to scalable APIs and cloud deployments.</p>
+            <p>I'm passionate about clean code, accessibility, and staying current with the evolving JavaScript ecosystem.</p>
+            <a href="about.html" class="btn btn-primary">Learn More About Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background: var(--bg-elevated);" aria-labelledby="preview-projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Featured Work</span>
+          <h2 id="preview-projects" class="section-title">Recent <span>projects</span></h2>
+          <p class="section-desc">A selection of work spanning e-commerce, SaaS, and internal tools.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-image-wrap">
+              <img src="assets/images/projects/shopflow.svg" alt="ShopFlow E-Commerce project thumbnail" class="project-thumb" width="640" height="400" loading="lazy" decoding="async">
+              <div class="project-overlay"><span class="project-overlay-text">View Project</span></div>
+            </div>
+            <div class="project-body">
+              <h3>ShopFlow E-Commerce</h3>
+              <p>Full-featured online store with cart, payments, and admin dashboard.</p>
+              <div class="project-tags">
+                <span>React</span><span>Node.js</span><span>Stripe</span>
+              </div>
+              <div class="project-links">
+                <a href="portfolio.html" class="btn btn-sm btn-primary">View Details</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-image-wrap">
+              <img src="assets/images/projects/analytics.svg" alt="Analytics Dashboard project thumbnail" class="project-thumb" width="640" height="400" loading="lazy" decoding="async">
+              <div class="project-overlay"><span class="project-overlay-text">View Project</span></div>
+            </div>
+            <div class="project-body">
+              <h3>Analytics Dashboard</h3>
+              <p>Real-time data visualization platform for enterprise teams.</p>
+              <div class="project-tags">
+                <span>Next.js</span><span>Python</span><span>PostgreSQL</span>
+              </div>
+              <div class="project-links">
+                <a href="portfolio.html" class="btn btn-sm btn-primary">View Details</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-image-wrap">
+              <img src="assets/images/projects/teamchat.svg" alt="TeamChat Pro project thumbnail" class="project-thumb" width="640" height="400" loading="lazy" decoding="async">
+              <div class="project-overlay"><span class="project-overlay-text">View Project</span></div>
+            </div>
+            <div class="project-body">
+              <h3>TeamChat Pro</h3>
+              <p>Real-time messaging app with channels, threads, and file sharing.</p>
+              <div class="project-tags">
+                <span>React</span><span>Socket.io</span><span>MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="portfolio.html" class="btn btn-sm btn-primary">View Details</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="text-center mt-2 reveal">
+          <a href="portfolio.html" class="btn btn-outline">See All Projects</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="preview-testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Testimonials</span>
+          <h2 id="preview-testimonials" class="section-title">Trusted by <span>clients</span></h2>
+          <p class="section-desc">Real feedback from professionals who have worked with DAVIDJAMES — proof of quality delivery.</p>
+        </div>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial-card testimonial-card--photo reveal">
+            <div class="testimonial-photo-wrap">
+              <img src="assets/images/testimonials/sarah-mitchell.svg" alt="Sarah Mitchell, CEO of RetailNova" class="testimonial-photo" width="200" height="200" loading="lazy">
+              <span class="testimonial-verified">Verified Client</span>
+            </div>
+            <div class="testimonial-card-body">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p class="testimonial-quote" aria-hidden="true">"</p>
+              <p class="testimonial-text">DAVIDJAMES delivered our e-commerce platform ahead of schedule. Sales increased 40% within the first quarter after launch.</p>
+              <footer class="testimonial-author">
+                <img src="assets/images/testimonials/sarah-mitchell.svg" alt="" class="testimonial-avatar" width="56" height="56" loading="lazy">
+                <div>
+                  <h4>Sarah Mitchell</h4>
+                  <span>CEO, RetailNova</span>
+                </div>
+              </footer>
+            </div>
+          </blockquote>
+
+          <blockquote class="testimonial-card testimonial-card--photo reveal">
+            <div class="testimonial-photo-wrap">
+              <img src="assets/images/testimonials/james-chen.svg" alt="James Chen, CTO of DataPulse Solutions" class="testimonial-photo" width="200" height="200" loading="lazy">
+              <span class="testimonial-verified">Verified Client</span>
+            </div>
+            <div class="testimonial-card-body">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p class="testimonial-quote" aria-hidden="true">"</p>
+              <p class="testimonial-text">He understood complex data requirements quickly and built an analytics solution our entire executive team relies on daily.</p>
+              <footer class="testimonial-author">
+                <img src="assets/images/testimonials/james-chen.svg" alt="" class="testimonial-avatar" width="56" height="56" loading="lazy">
+                <div>
+                  <h4>James Chen</h4>
+                  <span>CTO, DataPulse Solutions</span>
+                </div>
+              </footer>
+            </div>
+          </blockquote>
+
+          <blockquote class="testimonial-card testimonial-card--photo reveal">
+            <div class="testimonial-photo-wrap">
+              <img src="assets/images/testimonials/michael-torres.svg" alt="Michael Torres, Founder of LaunchPad Health" class="testimonial-photo" width="200" height="200" loading="lazy">
+              <span class="testimonial-verified">Verified Client</span>
+            </div>
+            <div class="testimonial-card-body">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p class="testimonial-quote" aria-hidden="true">"</p>
+              <p class="testimonial-text">Our MVP was stable, beautiful, and investor-ready. We've brought DAVIDJAMES back for two more phases of development.</p>
+              <footer class="testimonial-author">
+                <img src="assets/images/testimonials/michael-torres.svg" alt="" class="testimonial-avatar" width="56" height="56" loading="lazy">
+                <div>
+                  <h4>Michael Torres</h4>
+                  <span>Founder, LaunchPad Health</span>
+                </div>
+              </footer>
+            </div>
+          </blockquote>
+        </div>
+        <p class="text-center mt-2 reveal">
+          <a href="testimonials.html" class="btn btn-outline">Read All Testimonials</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section" style="background: var(--bg-elevated);" aria-labelledby="cta-heading">
+      <div class="container reveal">
+        <div class="cta-banner">
+          <h2 id="cta-heading">Ready to start your next project?</h2>
+          <p>Let's collaborate and bring your ideas to life with modern, scalable technology.</p>
+          <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">DAVID<span>JAMES</span></a>
+          <p>Full-stack developer building modern, responsive web applications for clients worldwide.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:davidjames@email.com">davidjames@email.com</a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 DAVIDJAMES. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="https://github.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+          <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+          <a href="https://twitter.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter">X</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
